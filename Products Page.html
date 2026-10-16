@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Katalog Game - GameSpot Rental</title>
+    <link rel="stylesheet" href="styleProductsPage.css" />
+    <script src="appProductsPage.js" defer></script>
+  </head>
+
+  <body>
+
+    <!-- ========================= NAVIGATION ========================== -->
+
+    <header class="navbar">
+      <div class="logo">
+        <span class="logo-icon">
+          <img src="Asset/Logo.png" alt="Logo" />
+        </span>
+        Game<span>Spot</span>
+      </div>
+      <nav>
+        <a href="Main Page.html">Home</a>
+        <a href="Products Page.html">Products</a>
+        <a href="Main Page.html#about">About</a>
+      </nav>
+      <a href="Payment Page.html" class="btn btn-small"> Checkout </a>
+    </header>
+
+    <main class="container">
+
+      <!-- ========================= HERO ========================== -->
+
+      <header class="hero-catalog">
+        <div class="hero-text-center">
+          <span class="badge">GAME CATALOG</span>
+          <h1>Eksplorasi Dunia Tanpa Batas</h1>
+          <p>Cari, filter, dan temukan game favorit untuk konsol Anda.</p>
+        </div>
+      </header>
+
+      <!-- ========================= TOOLBAR ========================== -->
+
+      <section class="toolbar">
+        <input id="searchInput" type="search" placeholder="Cari judul game (Cth: Zelda, Tekken)..." />
+        <select id="categoryFilter">
+          <option value="Semua">Semua Konsol</option>
+          <option value="PS5">PlayStation 5</option>
+          <option value="PS4">PlayStation 4</option>
+          <option value="Switch">Nintendo Switch</option>
+          <option value="Switch 2">Nintendo Switch 2</option>
+          <option value="Xbox">Xbox Series X</option>
+          <option value="Bundle">Disc Bundle</option>
+        </select>
+      </section>
+
+      <!-- ========================= SUMMARY ========================== -->
+
+      <section class="summary">
+        <div class="summary-card">
+          <span>Game Ditampilkan</span>
+          <strong id="productCount">0</strong>
+        </div>
+        <div class="summary-card">
+          <span>Total Stok Tersedia</span>
+          <strong id="stockCount">0</strong>
+        </div>
+      </section>
+
+      <!-- ========================= PRODUCT GRID ========================== -->
+
+      <section id="productList" class="product-grid"></section>
+    </main>
+
+    <!-- ========================= FOOTER ========================== -->
+
+    <footer>
+      <div class="logo">
+        <span class="logo-icon">
+          <img src="Asset/Logo.png" alt="Logo" />
+        </span>
+        Game<span>Spot</span>
+      </div>
+      <p>GameSpot Rental • Pusat Sewa Disc Game PS4, PS5, Xbox & Switch</p>
+    </footer>
+  </body>
+</html>
